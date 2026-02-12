@@ -1,8 +1,6 @@
-# DWA Planner (Standalone, Basic)
+# DWA Planner
 
-A simple standalone DWA local planner node for TurtleBot3.
-
-This version is intentionally basic (no Nav2 plugin integration).
+ DWA local planner node for TurtleBot3.
 
 ## Features
 - Subscribes to:
