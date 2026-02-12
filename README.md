@@ -26,7 +26,7 @@ colcon build --packages-select dwa_planner
 source install/setup.bash
 ```
 
-## Run (Standalone)
+## Run
 1. Start Gazebo and RViz (your normal TurtleBot3 simulation launch).
 2. Run planner node:
 
@@ -64,40 +64,3 @@ ros2 run dwa_planner dwa_planner_node --ros-args \
   -p safety_turn_speed:=1.8
 ```
 
-## Parameters
-- `max_vel_x`
-- `max_rot_vel`
-- `acc_lim_x`
-- `acc_lim_theta`
-- `vx_samples`
-- `vth_samples`
-- `sim_time`
-- `sim_granularity`
-- `goal_distance_bias`
-- `occdist_scale`
-- `speed_cost_gain`
-- `safety_stop_distance`
-- `safety_slow_distance`
-- `safety_turn_speed`
-- `goal_topic`
-- `legacy_goal_topic`
-
-## Upload to GitHub (copy-paste)
-If this folder is not already a git repo, run:
-
-```bash
-cd ~/turtlebot3_ws/src/dwa_planner
-git init
-git add .
-git commit -m "Standalone basic DWA planner"
-git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO>.git
-git push -u origin main
-```
-
-If remote already exists:
-```bash
-git add .
-git commit -m "Update standalone DWA planner"
-git push
-```
