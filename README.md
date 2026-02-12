@@ -12,9 +12,6 @@
 - Publishes:
   - `/cmd_vel`
   - `/dwa_markers` (all sampled trajectories + best trajectory)
-- Includes simple safety behavior:
-  - stop-and-turn near front obstacle
-  - recovery turn when no valid trajectory is found
 
 ## Build
 ```bash
